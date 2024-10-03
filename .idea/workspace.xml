@@ -4,12 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b448cc1-54c0-4f74-a79b-c37c32d10557" name="Changes" comment="m">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/model/AuditLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/model/MedicalRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/model/User.java" afterDir="false" />
+    <list default="true" id="3b448cc1-54c0-4f74-a79b-c37c32d10557" name="Changes" comment="&quot;all models&quot;">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/repository/PatientRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/medicalrecords/repository/PatientRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/controller/HelloWorldController.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/controller/HelloWorldController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/model/Patient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,36 +48,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.HelloWorldControllerTest.executor&quot;: &quot;Run&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MedicalRecordManagementSystemApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacka/IdeaProjects/medical-record-management-system/frontend&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.HelloWorldControllerTest.executor": "Run",
+    "JUnit.PatientRepositoryTest.executor": "Run",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.MedicalRecordManagementSystemApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/jacka/IdeaProjects/medical-record-management-system/frontend",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jacka\IdeaProjects\medical-record-management-system\backend\src\main\resources\static" />
       <recent name="C:\Users\jacka\IdeaProjects\medical-record-management-system\backend" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MedicalRecordManagementSystemApplication">
+  <component name="RunManager" selected="JUnit.PatientRepositoryTest">
     <configuration name="HelloWorldControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="medical-record-management-system" />
       <extension name="coverage">
@@ -93,6 +99,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PatientRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="medical-record-management-system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.medicalrecords.repository.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.medicalrecords.repository" />
+      <option name="MAIN_CLASS_NAME" value="com.medicalrecords.repository.PatientRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MedicalRecordManagementSystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="medical-record-management-system" />
@@ -103,6 +124,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PatientRepositoryTest" />
         <item itemvalue="JUnit.HelloWorldControllerTest" />
       </list>
     </recent_temporary>
@@ -125,6 +147,7 @@
       <updated>1727904425130</updated>
       <workItem from="1727904426845" duration="8555000" />
       <workItem from="1727971146791" duration="1953000" />
+      <workItem from="1727977968887" duration="2699000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Initial commit&quot;">
       <option name="closed" value="true" />
@@ -166,7 +189,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727971513138</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="&quot;all models&quot;">
+      <option name="closed" value="true" />
+      <created>1727976865651</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727976865651</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -188,6 +219,7 @@
     <MESSAGE value="&quot;Update .gitignore and database connection in application.properties run project&quot;" />
     <MESSAGE value="&quot;created hello world test for controller endopoint as well as basic unit test for hello world&quot;" />
     <MESSAGE value="m" />
-    <option name="LAST_COMMIT_MESSAGE" value="m" />
+    <MESSAGE value="&quot;all models&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;all models&quot;" />
   </component>
 </project>

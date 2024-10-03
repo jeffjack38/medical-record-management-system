@@ -42,6 +42,18 @@ public class Patient {
     @Column(name = "updated_at", nullable = false)
     private Date updatedAt;
 
+    // Automatically set createdAt and updatedAt timestamps
+    @PrePersist
+    protected void onCreate() {
+        this.createdAt = new Date();
+        this.updatedAt = new Date();
+    }
+
+    @PreUpdate
+    protected void onUpdate() {
+        this.updatedAt = new Date();
+    }
+
     //No args constructor
 
     public Patient() {
