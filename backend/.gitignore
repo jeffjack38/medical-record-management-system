@@ -132,7 +132,9 @@ dist/
 # Hugo files
 public/
 
-# Gridsome files
+# database in applications.properties
+/src/main/resources/application.properties
+
 
 
 
