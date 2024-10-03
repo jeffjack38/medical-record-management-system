@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b448cc1-54c0-4f74-a79b-c37c32d10557" name="Changes" comment="&quot;updated patient model so createdAt and updatedAT fields don't show up as null and passed test for testDatabaseConnectivity in PatientRepositoryTest&quot;">
+    <list default="true" id="3b448cc1-54c0-4f74-a79b-c37c32d10557" name="Changes" comment="&quot;added patient and MedicalRecordRepository.java&quot;">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/service/MedicalRecordService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/service/PatientService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/repository/PatientRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +17,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -144,7 +146,7 @@
       <updated>1727904425130</updated>
       <workItem from="1727904426845" duration="8555000" />
       <workItem from="1727971146791" duration="1953000" />
-      <workItem from="1727977968887" duration="3437000" />
+      <workItem from="1727977968887" duration="4175000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Initial commit&quot;">
       <option name="closed" value="true" />
@@ -202,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727980990533</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="&quot;added patient and MedicalRecordRepository.java&quot;">
+      <option name="closed" value="true" />
+      <created>1727981605507</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727981605507</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +236,7 @@
     <MESSAGE value="m" />
     <MESSAGE value="&quot;all models&quot;" />
     <MESSAGE value="&quot;updated patient model so createdAt and updatedAT fields don't show up as null and passed test for testDatabaseConnectivity in PatientRepositoryTest&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;updated patient model so createdAt and updatedAT fields don't show up as null and passed test for testDatabaseConnectivity in PatientRepositoryTest&quot;" />
+    <MESSAGE value="&quot;added patient and MedicalRecordRepository.java&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;added patient and MedicalRecordRepository.java&quot;" />
   </component>
 </project>
