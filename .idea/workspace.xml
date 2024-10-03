@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b448cc1-54c0-4f74-a79b-c37c32d10557" name="Changes" comment="&quot;all models&quot;">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/repository/PatientRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/medicalrecords/repository/PatientRepositoryTest.java" afterDir="false" />
+    <list default="true" id="3b448cc1-54c0-4f74-a79b-c37c32d10557" name="Changes" comment="&quot;updated patient model so createdAt and updatedAT fields don't show up as null and passed test for testDatabaseConnectivity in PatientRepositoryTest&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/model/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/model/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/repository/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/repository/PatientRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +144,7 @@
       <updated>1727904425130</updated>
       <workItem from="1727904426845" duration="8555000" />
       <workItem from="1727971146791" duration="1953000" />
-      <workItem from="1727977968887" duration="2699000" />
+      <workItem from="1727977968887" duration="3437000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Initial commit&quot;">
       <option name="closed" value="true" />
@@ -197,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727976865651</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="&quot;updated patient model so createdAt and updatedAT fields don't show up as null and passed test for testDatabaseConnectivity in PatientRepositoryTest&quot;">
+      <option name="closed" value="true" />
+      <created>1727980990533</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727980990533</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +225,7 @@
     <MESSAGE value="&quot;created hello world test for controller endopoint as well as basic unit test for hello world&quot;" />
     <MESSAGE value="m" />
     <MESSAGE value="&quot;all models&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;all models&quot;" />
+    <MESSAGE value="&quot;updated patient model so createdAt and updatedAT fields don't show up as null and passed test for testDatabaseConnectivity in PatientRepositoryTest&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;updated patient model so createdAt and updatedAT fields don't show up as null and passed test for testDatabaseConnectivity in PatientRepositoryTest&quot;" />
   </component>
 </project>
