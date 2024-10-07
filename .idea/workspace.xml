@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b448cc1-54c0-4f74-a79b-c37c32d10557" name="Changes" comment="&quot;MedicalRecordController and PatientController, MedicalRecordService, PatientService&quot;">
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/medicalrecords/service/MedicalRecordServiceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/test/java/com/medicalrecords/service/PatientServiceTest.java" afterDir="false" />
+    <list default="true" id="3b448cc1-54c0-4f74-a79b-c37c32d10557" name="Changes" comment="&quot;Service Tests all pass&quot;">
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/dto/JwtResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/dto/LoginRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/dto/RegisterRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/security/JwtUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,42 +54,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.HelloWorldControllerTest.executor": "Run",
-    "JUnit.PatientRepositoryTest.executor": "Run",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.MedicalRecordManagementSystemApplication.executor": "Run",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/jacka/IdeaProjects/medical-record-management-system/frontend",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.HelloWorldControllerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MedicalRecordServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PatientRepositoryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PatientServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.MedicalRecordManagementSystemApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/jacka/IdeaProjects/medical-record-management-system/frontend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\jacka\IdeaProjects\medical-record-management-system\backend\src\main\resources\static" />
       <recent name="C:\Users\jacka\IdeaProjects\medical-record-management-system\backend" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PatientServiceTest">
+  <component name="RunManager" selected="Spring Boot.MedicalRecordManagementSystemApplication">
     <configuration name="HelloWorldControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="medical-record-management-system" />
       <extension name="coverage">
@@ -178,7 +187,8 @@
       <updated>1727904425130</updated>
       <workItem from="1727904426845" duration="8555000" />
       <workItem from="1727971146791" duration="1953000" />
-      <workItem from="1727977968887" duration="4664000" />
+      <workItem from="1727977968887" duration="11370000" />
+      <workItem from="1728316706914" duration="7961000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Initial commit&quot;">
       <option name="closed" value="true" />
@@ -252,7 +262,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727982424189</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="&quot;Service Tests all pass&quot;">
+      <option name="closed" value="true" />
+      <created>1727983679835</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1727983679836</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +296,7 @@
     <MESSAGE value="&quot;updated patient model so createdAt and updatedAT fields don't show up as null and passed test for testDatabaseConnectivity in PatientRepositoryTest&quot;" />
     <MESSAGE value="&quot;added patient and MedicalRecordRepository.java&quot;" />
     <MESSAGE value="&quot;MedicalRecordController and PatientController, MedicalRecordService, PatientService&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;MedicalRecordController and PatientController, MedicalRecordService, PatientService&quot;" />
+    <MESSAGE value="&quot;Service Tests all pass&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Service Tests all pass&quot;" />
   </component>
 </project>
