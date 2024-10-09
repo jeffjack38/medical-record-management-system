@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3b448cc1-54c0-4f74-a79b-c37c32d10557" name="Changes" comment="&quot;Service Tests all pass&quot;">
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/dto/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/dto/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/dto/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/medicalrecords/security/JwtUtils.java" afterDir="false" />
+    <list default="true" id="3b448cc1-54c0-4f74-a79b-c37c32d10557" name="Changes" comment="&quot;Sprint 2.1&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/backend/pom.xml" afterDir="false" />
     </list>
@@ -188,7 +180,8 @@
       <workItem from="1727904426845" duration="8555000" />
       <workItem from="1727971146791" duration="1953000" />
       <workItem from="1727977968887" duration="11370000" />
-      <workItem from="1728316706914" duration="7961000" />
+      <workItem from="1728316706914" duration="8793000" />
+      <workItem from="1728488615467" duration="3178000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;Initial commit&quot;">
       <option name="closed" value="true" />
@@ -270,7 +263,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727983679836</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="&quot;Sprint 2.1&quot;">
+      <option name="closed" value="true" />
+      <created>1728326926458</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1728326926460</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +298,7 @@
     <MESSAGE value="&quot;added patient and MedicalRecordRepository.java&quot;" />
     <MESSAGE value="&quot;MedicalRecordController and PatientController, MedicalRecordService, PatientService&quot;" />
     <MESSAGE value="&quot;Service Tests all pass&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;Service Tests all pass&quot;" />
+    <MESSAGE value="&quot;Sprint 2.1&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;Sprint 2.1&quot;" />
   </component>
 </project>
